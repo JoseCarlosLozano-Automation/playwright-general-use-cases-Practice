@@ -87,7 +87,7 @@ test('Child windows handling', async ({ browser }) => {
     console.log("The input value is: " + await userName.inputValue());
 });
 
-test.only('test', async ({ page }) => {
+test('test', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
   const page1Promise = page.waitForEvent('popup');
   await page.getByRole('link', { name: 'Free Access to InterviewQues/' }).click();
